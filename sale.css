@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Header Styles (unchanged) */
+header {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 20px auto;
+}
+
+.logo img {
+  width: 400px;
+  height: 100px;
+}
+
+/* Navigation Styles (unchanged) */
+.navbar {
+  padding: 1em;
+  text-align: left;
+  border-bottom: 1px black;
+  white-space: nowrap;
+  color: black;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px black;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.navbar ul li {
+  border-bottom: 1px black;
+  box-shadow: none;
+}
+
+.navbar ul li a {
+  color: #000000 !important;
+}
+
+.navbar a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar select {
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar select option {
+  color: black;
+}
+
+.navbar h2 {
+  text-align: center;
+}
+
+.dropdown-toggle:after {
+  content: "\25BC";
+  font-size: 12px;
+  margin-left: 5px;
+  display: inline-block;
+}
+.dropdown {
+  position: relative;
+  display:inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
+  padding-right: 15px; 
+}
+
+.dropdown-menu {
+  position: fixed;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 76%;
+  padding: 50px;
+  display: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Add shadow */
+   /* Ensure menu appears above content */
+}
+.dropdown-menu li {
+  display: block;
+}
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu li a:hover {
+  color:black;
+}
+.dropdown-menu li a:hover {
+  color: black;
+  background: #f0f0f0; 
+}
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.navbar search-box{
+max-width:550px;
+margin-left:350px;
+display:flex;
+align-items:right;
+justify-content:right;
+}
+.search-box input{
+width:200px;
+height:0px;
+font-size:20px;
+padding:20px;
+margin-left:350px;
+border:2px solid black !important;
+}
+.search-box button{
+width: 40px;
+padding:9px;
+font-size:20px;
+cursor:pointer;
+}
+
+body{
+background-color:white;
+
+}
+.image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Equal spaces */
+      gap: 10px; /* Space between items */
+    }
+.h1
+{
+ color:rgb(165,124,0);
+ text-align:center;
+ font-size:40px;
+}
+
+.row{
+display:flex;
+justify-content:center;
+margin-bottom:20px 20px;
+gap:30px;
+flex-wrap:wrap;
+align-items: stretch;
+}
+.item{
+margin:30px;
+padding:15px;
+width:300px;
+text-align:center;
+border-radius: 10px;
+flex-direction: column;
+display: flex;
+justify-content: space-between;
+}
+.item img {
+  width: 250px;
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 20px;
+}
+.name {
+  font-size: 20px;
+  color: black;
+  margin: 10px 0 5px;
+  min-height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  color: black;
+  margin: 5px 0 10px;
+  min-height: 20px;
+}
+.cart-button{
+    display: inline-block;
+    background-color:rgb(230, 169, 56);
+    color:white;
+    padding: 10px;
+    border-radius:25px;
+    box-shadow:none;
+    margin:0px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.cart-button:hover{
+  background-color: #ec971f;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+.cart-button:active{
+  transform: scale(0.95);
+  background-color: #d58512;
+
+}
+
+.original-price{
+text-decoration:line-through;
+color:black;}
+.discounted-price{
+font-weight:bold;
+color:black;
+}
+.index-image img{  /*picture transition*/
+transition:1.0s;
+}
+.index-image img:hover{ 
+transform:scale(0.9);
+opacity:0.8;
+}
+
+
+
+footer{
+background-color:black;
+color:white;
+width:100%;
+padding:10px;
+}
+.footer-container{
+max-width:1200px;
+margin: auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+.footer-section h3{
+font-size:18px;
+margin-bottom:10px;
+color:white;
+}
+.footer-section p{
+font-size:14px;
+margin-bottom:10px;
+color:white;
+}
+.footer-section ul{
+list-style:none;
+}
+.footer-section li{
+display:inline-block;
+}
+.footer-section img{
+margin-right:10px;
+}
+.footer-section a{
+color:white;
+text-decoration:none;
+}
+.footer-section a:hover{
+color:black;
+}

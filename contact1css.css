@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Header Styles (unchanged) */
+header {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 20px auto;
+}
+
+.logo img {
+  width: 400px;
+  height: 100px;
+}
+
+/* Navigation Styles (unchanged) */
+.navbar {
+  padding: 1em;
+  text-align: left;
+  border-bottom: 1px black;
+  white-space: nowrap;
+  color: black;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px black;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.navbar ul li {
+  border-bottom: 1px black;
+  box-shadow: none;
+}
+
+.navbar ul li a {
+  color: #000000 !important;
+}
+
+.navbar a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar select {
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar select option {
+  color: black;
+}
+
+.navbar h2 {
+  text-align: center;
+}
+
+/* Dropdown Styles (unchanged) */
+.dropdown-toggle:after {
+  content: "\25BC";
+  font-size: 12px;
+  margin-left: 5px;
+  display: inline-block;
+}
+.dropdown {
+  position: relative;
+  display:inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
+  padding-right: 15px; 
+}
+
+.dropdown-menu {
+  position: fixed;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 76%;
+  padding: 50px;
+  display: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Add shadow */
+   
+}
+.dropdown-menu li {
+  display: block;
+}
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu li a:hover {
+  color:black;
+}
+.dropdown-menu li a:hover {
+  color: black;
+  background: #f0f0f0; 
+}
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+/* Search Box (unchanged) */
+.navbar search-box {
+  max-width: 550px;
+  margin-left: 350px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.search-box input {
+  width: 200px;
+  height: 0px;
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 350px;
+  border: 2px solid black !important;
+}
+
+.search-box button {
+  width: 40px;
+  padding: 9px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Contact Section - Fixed Styles */
+h1 {
+  color: rgb(165, 124, 0);
+}
+
+.content {
+  font-size: 30px;
+  text-align: center;
+}
+
+.contact {
+  position: relative;
+  min-height: 40vh;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed for better alignment */
+}
+
+.container .contactInfo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px; /* Added spacing */
+}
+
+/* Fixed Contact Info Items */
+.box, .item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.icon {
+  color: rgb(165, 124, 0);
+  font-size: 22px;
+  min-width: 30px;
+  margin-right: 15px;
+  padding-top: 3px; /* Perfect vertical alignment */
+}
+
+.text h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.text span {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Contact Form (unchanged) */
+.contactForm {
+  width: 40%;
+  padding: 10px;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-10px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .container .contactInfo,
+  .contactForm {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .search-box input {
+    margin-left: 0;
+    width: 150px;
+  }
+}
